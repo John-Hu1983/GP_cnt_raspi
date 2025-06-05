@@ -28,7 +28,7 @@ typedef enum
 
 #define UART_GPIO_A (0)
 #define UART_GPIO_B (1)
-#define UART_GPIO_SET (UART_GPIO_A)
+#define UART_GPIO_SET (UART_GPIO_B)
 
 #if UART_GPIO_SET == UART_GPIO_A
 

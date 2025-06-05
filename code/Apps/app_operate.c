@@ -5,8 +5,8 @@ static event_t pitch = {
 const btn_io Btn_IO[] = {
     {{GPCE_PA, 0}, io_input_pulldown, TRUE, 10, 50},
     {{GPCE_PA, 1}, io_input_pulldown, TRUE, 10, 50},
-    // {{GPCE_PA, 2}, io_input_pulldown, TRUE, 10, 50},
-    // {{GPCE_PA, 3}, io_input_pulldown, TRUE, 10, 50},
+    {{GPCE_PA, 2}, io_input_pulldown, TRUE, 10, 50},
+    {{GPCE_PA, 3}, io_input_pulldown, TRUE, 10, 50},
     {{GPCE_PA, 4}, io_input_pulldown, TRUE, 10, 50},
     {{GPCE_PA, 5}, io_input_pulldown, TRUE, 10, 50},
     {{GPCE_PA, 6}, io_input_pulldown, TRUE, 10, 50},
@@ -53,15 +53,15 @@ void task_operate_event(osvar_t ms)
     return;
   }
 
+  pitch.bits.ms_8b = (pitch.bits.ms_8b < ms) ? 0 : pitch.bits.ms_8b - ms;
   for (i = 0; i < Btn_Amount; i++)
   {
     btn_v[i] = scan_btn_object((btn_obj *)&bt[i], ms);
-    if (btn_v[i] != BTN_IDLE)
+    if (btn_v[i] != BTN_IDLE && is_uart_tx_free())
     {
       memset(buf, '\0', sizeof(buf));
-      sprintf(buf, "AT+IOA%d:%s", i, (btn_v[i] == BTN_CLICK) ? "click\n" : "hold\n");
+      sprintf(buf, "AT+IOA%d:%s", i, (btn_v[i] == BTN_CLICK) ? "click" : "hold");
       insert_tx_fifo(buf);
     }
   }
-  pitch.bits.ms_8b = (pitch.bits.ms_8b < ms) ? 0 : pitch.bits.ms_8b - ms;
 }
