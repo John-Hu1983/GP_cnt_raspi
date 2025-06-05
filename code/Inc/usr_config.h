@@ -3,10 +3,11 @@
 
 #define WATCH_DOG_ENABLE                (1)
 #define ADC_TRIGGER_BY_TIM              (0)
-
-#define CAP_TOUCH_EN                    (1)
-#define SHELL_LOG_EN                    (0)
 #define PCBA_CHECK_MODE                 (0)
+
+
+//************************cap touch********************************
+#define CAP_TOUCH_EN                    (0)
 
 //************************voice********************************
 #define VOLUME_A1800                    (10)    // maximum :15
@@ -17,5 +18,11 @@
 #define RF_ROLE_MASTER                  (0)
 #define RF_ROLE_CLIENT                  (1)
 #define RF_ROLE_SELECT                  (RF_ROLE_CLIENT)
+
+//************************Uart********************************
+#define SHELL_LOG_EN                    (1)
+#define UART_SEND_EN                    (1)
+#define UART_RECV_EN                    (1)
+
 
 #endif

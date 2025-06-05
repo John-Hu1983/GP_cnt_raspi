@@ -1,8 +1,5 @@
 #include "../inc/includes.h"
 
-#define UART_SEND_EN (1)
-#define UART_RECV_EN (1)
-
 #if UART_SEND_EN
 Uartmem_t tx_fifo;
 #endif
@@ -58,8 +55,8 @@ void init_uart_equipment(Baud_t baudround)
             continue;
         break;
     }
-    *P_UART_BaudRate = baudround;    // load baud rate
-    *P_INT2_Status |= bitset(3); // clear flag
+    *P_UART_BaudRate = baudround; // load baud rate
+    *P_INT2_Status |= bitset(3);  // clear flag
 
 #if UART_SEND_EN
     memset((void *)&tx_fifo, 0, sizeof(tx_fifo));

@@ -1,16 +1,6 @@
 #ifndef _KERNEL_H_
 #define _KERNEL_H_
 
-typedef union
-{
-  u16 words;
-  struct
-  {
-    unsigned debounce : 8;
-    unsigned step : 8;
-  } bits;
-} event_state;
-
 typedef struct
 {
   osvar_t counter;

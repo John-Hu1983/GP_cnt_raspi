@@ -8,7 +8,8 @@
 		"files.associations": {
 			"sacm.h": "c",
 			"app_shell.h": "c",
-			"rf_config.h": "c"
+			"rf_config.h": "c",
+			"spinvoice.h": "c"
 		}
 	}
 }

@@ -103,10 +103,11 @@ void init_board_global(void)
 #if CAP_TOUCH_EN
   enable_cap_touch();
 #endif
+
   init_adc_equipment();
 
 #if SHELL_LOG_EN
-  init_uart_equipment(Baud_460800);
+  init_shell_equipment();
 #endif
 
   init_audio_equipment();

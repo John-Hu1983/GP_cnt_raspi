@@ -58,12 +58,6 @@ typedef enum
     op_empty,
 } op_res;
 
-typedef struct
-{
-    uint8_t step;
-    uint16_t period;
-} event_t;
-
 typedef enum
 {
     BTN_IDLE,
@@ -83,5 +77,16 @@ typedef struct
     uint16_t sum;
     uint16_t average;
 } filter_t;
+
+typedef union
+{
+    u16 words;
+    struct
+    {
+        unsigned init_1b : 1;
+        unsigned step_7b : 8; // max 127
+        unsigned ms_8b : 8;   // max 255
+    } bits;
+} event_t;
 
 #endif

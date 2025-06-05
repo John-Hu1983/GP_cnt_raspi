@@ -70,8 +70,10 @@ void disable_cap_touch(void)
  */
 void isr_cts_tma(void)
 {
+#if CAP_TOUCH_EN
 	control.conversion = *P_CTS_CAPTMB;
 	control.state.bits.ok = 1;
+#endif
 }
 
 /*

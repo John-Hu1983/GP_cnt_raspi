@@ -31,10 +31,10 @@ const u16 terminal_len = sizeof(terminal) / sizeof(terminal[0]);
  * argument out :
  * description  :
  */
-void init_task_equipment(void)
+void init_shell_equipment(void)
 {
   memset((void *)&cmd, 0, sizeof(cmd));
-  init_uart_equipment(Baud_460800);
+  init_uart_equipment(Baud_115200);
 }
 
 /*
@@ -70,8 +70,7 @@ void extract_terminal_parameter(char *message)
   {
     if (strncmp(message, terminal[i].str, strlen(terminal[i].str)) == 0)
     {
-      // load_voice_single(DI_WAV_A18, true);
-      value_str = strchr(message, ':'); // Find the colon in the message
+      value_str = strchr(message, ':');
       if (value_str != NULL)
       {
         value_str++;

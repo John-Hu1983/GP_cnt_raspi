@@ -14,7 +14,7 @@ typedef struct
   void (*func)(float);
 } shell_remote_ctr;
 
-void init_task_equipment(void);
+void init_shell_equipment(void);
 void logout_by_channel(u8 cn, int val);
 void task_shell_log(osvar_t ms);
 #endif
