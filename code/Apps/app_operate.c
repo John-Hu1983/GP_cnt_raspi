@@ -36,15 +36,16 @@ void init_operate_app(void)
  * argument out :
  * description  :
  */
-enum
-{
-  _init_ = 0,
-};
+// #define Test_Uart
 void task_operate_event(osvar_t ms)
 {
   btnval_t btn_v[sizeof(Btn_IO) / sizeof(Btn_IO[0])];
   u8 buf[64];
   u16 i;
+  static u16 delayms = 0;
+#ifdef Test_Uart
+  static u16 inx = 0;
+#endif
 
   if (pitch.bits.init_1b == 0)
   {
@@ -52,6 +53,7 @@ void task_operate_event(osvar_t ms)
     init_operate_app();
     return;
   }
+  delayms = (delayms < ms) ? 0 : delayms - ms;
 
   pitch.bits.ms_8b = (pitch.bits.ms_8b < ms) ? 0 : pitch.bits.ms_8b - ms;
   for (i = 0; i < Btn_Amount; i++)
@@ -60,8 +62,18 @@ void task_operate_event(osvar_t ms)
     if (btn_v[i] != BTN_IDLE && is_uart_tx_free())
     {
       memset(buf, '\0', sizeof(buf));
-      sprintf(buf, "AT+IOA%d:%s", i, (btn_v[i] == BTN_CLICK) ? "click" : "hold");
+      sprintf(buf, "AT+IOA%d:%s", i, (btn_v[i] == BTN_CLICK) ? "click;" : "hold;");
       insert_tx_fifo(buf);
     }
   }
+
+#ifdef Test_Uart
+  if (delayms == 0)
+  {
+    delayms = 20;
+    memset(buf, '\0', sizeof(buf));
+    sprintf(buf, "AT+IOA%d:ok;", inx++);
+    insert_tx_fifo(buf);
+  }
+#endif
 }

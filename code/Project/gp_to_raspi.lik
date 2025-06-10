@@ -65,11 +65,11 @@ Locate: IRam_Bank0 after __sn_init_table linkat #RAM
 ;Align: TEXT in "isr.obj" with 0 
 ;Locate: IRAM in "SACM_Mixer_User.obj" at 1196D  linkat E5 
 ;Align: IRAM in "SACM_Mixer_User.obj" with 0 
-;Locate: IRAM in "kernel.obj" at 11984  linkat B10 
+;Locate: IRAM in "kernel.obj" at 11985  linkat B10 
 ;Align: IRAM in "kernel.obj" with 0 
-;Locate: IRAM in "os_beason.obj" at 11978  linkat F0 
+;Locate: IRAM in "os_beason.obj" at 11979  linkat F1 
 ;Align: IRAM in "os_beason.obj" with 0 
-;Locate: IRAM in "app_operate.obj" at 11972  linkat EA 
+;Locate: IRAM in "app_operate.obj" at 11976  linkat EE 
 ;Align: IRAM in "app_operate.obj" with 0 
 ;Locate: IRAM in "SACM_A34Pro_fptr_API" of "A3400Pro_fptr_V0.9.3.lib"  at 1196E  linkat E6 
 ;Align: IRAM in "SACM_A34Pro_fptr_API" of "A3400Pro_fptr_V0.9.3.lib"  with 0 
@@ -79,11 +79,11 @@ Locate: IRam_Bank0 after __sn_init_table linkat #RAM
 ;Align: IRAM in "GEO" of "GEO_V1.0.7.lib"  with 0 
 ;Locate: IRAM in "SACM_A1800_fptr_Decode" of "SACM_A1800_fptr_V0.9.2.lib"  at 11971  linkat E9 
 ;Align: IRAM in "SACM_A1800_fptr_Decode" of "SACM_A1800_fptr_V0.9.2.lib"  with 0 
-;Locate: IRAM in "reent/impure" of "CLib1232.lib"  at 1197C  linkat F4 
+;Locate: IRAM in "reent/impure" of "CLib1232.lib"  at 1197D  linkat F5 
 ;Align: IRAM in "reent/impure" of "CLib1232.lib"  with 0 
-;Locate: IRAM in "memory/malloc" of "Libmem1232.lib"  at 11974  linkat EC 
+;Locate: IRAM in "memory/malloc" of "Libmem1232.lib"  at 11972  linkat EA 
 ;Align: IRAM in "memory/malloc" of "Libmem1232.lib"  with 0 
-;Locate: IRAM in "memory/init_heap" of "Libmem1232.lib"  at 11976  linkat EE 
+;Locate: IRAM in "memory/init_heap" of "Libmem1232.lib"  at 11974  linkat EC 
 ;Align: IRAM in "memory/init_heap" of "Libmem1232.lib"  with 0 
 ;Locate: RAM in "system.obj" at 78 
 ;Align: RAM in "system.obj" with 0 
@@ -131,7 +131,7 @@ Locate: IRam_Bank0 after __sn_init_table linkat #RAM
 ;Align: OVERLAP_A1800_DM_BLOCK_Global in "A1800_Codec" of "SACM_A1800_fptr_V0.9.2.lib"  with 0 
 ;Locate: OVERLAP_A1800_DM_BLOCK_Local in "A1800_Codec" of "SACM_A1800_fptr_V0.9.2.lib"  at 847 
 ;Align: OVERLAP_A1800_DM_BLOCK_Local in "A1800_Codec" of "SACM_A1800_fptr_V0.9.2.lib"  with 0 
-;Locate: CODE in "Resource.obj" at 11DBB 
+;Locate: CODE in "Resource.obj" at 11DE2 
 ;Align: CODE in "Resource.obj" with 0 
 ;Locate: SleepCode_RAMCode_SEC in "system.obj" at 10E24 
 ;Align: SleepCode_RAMCode_SEC in "system.obj" with 0 
@@ -141,7 +141,7 @@ Locate: IRam_Bank0 after __sn_init_table linkat #RAM
 ;Align: Mixer_ISR_Service_ROMBLOCK in "SACM_Mixer_User.obj" with 0 
 ;Locate: SPIFC_RAMCode_SEC in "SPI_Flash.obj" at C8FC 
 ;Align: SPIFC_RAMCode_SEC in "SPI_Flash.obj" with 0 
-;Locate: CODE in "main.obj" at 11D7A 
+;Locate: CODE in "main.obj" at 11DA1 
 ;Align: CODE in "main.obj" with 0 
 ;Locate: CODE in "phy_adc.obj" at E4CA 
 ;Align: CODE in "phy_adc.obj" with 0 
@@ -149,25 +149,25 @@ Locate: IRam_Bank0 after __sn_init_table linkat #RAM
 ;Align: CODE in "phy_ccp.obj" with 0 
 ;Locate: CODE in "phy_ext.obj" at E26C 
 ;Align: CODE in "phy_ext.obj" with 0 
-;Locate: CODE in "phy_gpio.obj" at F19A 
+;Locate: CODE in "phy_gpio.obj" at F1C1 
 ;Align: CODE in "phy_gpio.obj" with 0 
 ;Locate: CODE in "phy_i2c.obj" at E955 
 ;Align: CODE in "phy_i2c.obj" with 0 
 ;Locate: CODE in "phy_iopwm.obj" at 10A48 
 ;Align: CODE in "phy_iopwm.obj" with 0 
-;Locate: CODE in "phy_spi.obj" at F58A 
+;Locate: CODE in "phy_spi.obj" at F5B1 
 ;Align: CODE in "phy_spi.obj" with 0 
 ;Locate: CODE in "phy_timer.obj" at 10000 
 ;Align: CODE in "phy_timer.obj" with 0 
-;Locate: CODE in "phy_uart.obj" at ED8D 
+;Locate: CODE in "phy_uart.obj" at EFAF 
 ;Align: CODE in "phy_uart.obj" with 0 
 ;Locate: CODE in "board.obj" at 11422 
 ;Align: CODE in "board.obj" with 0 
-;Locate: DATA in "board.obj" at 1207A 
+;Locate: DATA in "board.obj" at 120A2 
 ;Align: DATA in "board.obj" with 0 
 ;Locate: CODE in "dev_audio.obj" at DCDB 
 ;Align: CODE in "dev_audio.obj" with 0 
-;Locate: CODE in "dev_button.obj" at FE8D 
+;Locate: CODE in "dev_button.obj" at FEB4 
 ;Align: CODE in "dev_button.obj" with 0 
 ;Locate: CODE in "dev_cap_touch.obj" at D027 
 ;Align: CODE in "dev_cap_touch.obj" with 0 
@@ -175,15 +175,15 @@ Locate: IRam_Bank0 after __sn_init_table linkat #RAM
 ;Align: CODE in "dev_sleep.obj" with 0 
 ;Locate: CODE in "kernel.obj" at 10562 
 ;Align: CODE in "kernel.obj" with 0 
-;Locate: CODE in "os_beason.obj" at F8F5 
+;Locate: CODE in "os_beason.obj" at F91C 
 ;Align: CODE in "os_beason.obj" with 0 
-;Locate: CODE in "app_operate.obj" at EF9F 
+;Locate: CODE in "app_operate.obj" at EB78 
 ;Align: CODE in "app_operate.obj" with 0 
-;Locate: CODE in "app_shell.obj" at F395 
+;Locate: CODE in "app_shell.obj" at F3BC 
 ;Align: CODE in "app_shell.obj" with 0 
-;Locate: DATA in "app_shell.obj" at 120BA 
+;Locate: DATA in "app_shell.obj" at 120E2 
 ;Align: DATA in "app_shell.obj" with 0 
-;Locate: CODE in "SACM_A34Pro_fptr_API" of "A3400Pro_fptr_V0.9.3.lib"  at 11D83 
+;Locate: CODE in "SACM_A34Pro_fptr_API" of "A3400Pro_fptr_V0.9.3.lib"  at 11DAA 
 ;Align: CODE in "SACM_A34Pro_fptr_API" of "A3400Pro_fptr_V0.9.3.lib"  with 0 
 ;Locate: A34Pro_fptr_Kernel_BLOCK in "SACM_A34Pro_fptr_API" of "A3400Pro_fptr_V0.9.3.lib"  at D9E1 
 ;Align: A34Pro_fptr_Kernel_BLOCK in "SACM_A34Pro_fptr_API" of "A3400Pro_fptr_V0.9.3.lib"  with 0 
@@ -191,75 +191,75 @@ Locate: IRam_Bank0 after __sn_init_table linkat #RAM
 ;Align: A34Pro_fptr_API_BLOCK in "SACM_A34Pro_fptr_API" of "A3400Pro_fptr_V0.9.3.lib"  with 0 
 ;Locate: A34Pro_fptr_ISR_Service_BLOCK in "SACM_A34Pro_fptr_API" of "A3400Pro_fptr_V0.9.3.lib"  at 117F3 
 ;Align: A34Pro_fptr_ISR_Service_BLOCK in "SACM_A34Pro_fptr_API" of "A3400Pro_fptr_V0.9.3.lib"  with 0 
-;Locate: CODE in "SACM_A1800_fptr_API" of "SACM_A1800_fptr_V0.9.2.lib"  at 11D8B 
+;Locate: CODE in "SACM_A1800_fptr_API" of "SACM_A1800_fptr_V0.9.2.lib"  at 11DB2 
 ;Align: CODE in "SACM_A1800_fptr_API" of "SACM_A1800_fptr_V0.9.2.lib"  with 0 
 ;Locate: A1800_fptr_API_IM_BLOCK_1_1 in "SACM_A1800_fptr_API" of "SACM_A1800_fptr_V0.9.2.lib"  at 1046F 
 ;Align: A1800_fptr_API_IM_BLOCK_1_1 in "SACM_A1800_fptr_API" of "SACM_A1800_fptr_V0.9.2.lib"  with 0 
 ;Locate: A1800_fptr_API_IM_BLOCK_2_1 in "SACM_A1800_fptr_API" of "SACM_A1800_fptr_V0.9.2.lib"  at 1182F 
 ;Align: A1800_fptr_API_IM_BLOCK_2_1 in "SACM_A1800_fptr_API" of "SACM_A1800_fptr_V0.9.2.lib"  with 0 
-;Locate: A1800_fptr_API_IM_BLOCK_1_2 in "SACM_A1800_fptr_API" of "SACM_A1800_fptr_V0.9.2.lib"  at 11D16 
+;Locate: A1800_fptr_API_IM_BLOCK_1_2 in "SACM_A1800_fptr_API" of "SACM_A1800_fptr_V0.9.2.lib"  at 11D48 
 ;Align: A1800_fptr_API_IM_BLOCK_1_2 in "SACM_A1800_fptr_API" of "SACM_A1800_fptr_V0.9.2.lib"  with 0 
 ;Locate: A1800_fptr_ISR_Service_BLOCK in "SACM_A1800_fptr_API" of "SACM_A1800_fptr_V0.9.2.lib"  at 10F4B 
 ;Align: A1800_fptr_ISR_Service_BLOCK in "SACM_A1800_fptr_API" of "SACM_A1800_fptr_V0.9.2.lib"  with 0 
-;Locate: A1800_fptr_API_IM_BLOCK_2_2 in "SACM_A1800_fptr_API" of "SACM_A1800_fptr_V0.9.2.lib"  at 11DBF 
+;Locate: A1800_fptr_API_IM_BLOCK_2_2 in "SACM_A1800_fptr_API" of "SACM_A1800_fptr_V0.9.2.lib"  at 11DE6 
 ;Align: A1800_fptr_API_IM_BLOCK_2_2 in "SACM_A1800_fptr_API" of "SACM_A1800_fptr_V0.9.2.lib"  with 0 
 ;Locate: CODE in "VolumeCompressor" of "GPCE_VolumeCompressor_V0.9.1.lib"  at 10D8B 
 ;Align: CODE in "VolumeCompressor" of "GPCE_VolumeCompressor_V0.9.1.lib"  with 0 
 ;Locate: A34Pro_fptr_Event_Kernel_BLOCK in "A34Pro_fptr_Event" of "A3400Pro_fptr_V0.9.3.lib"  at 10254 
 ;Align: A34Pro_fptr_Event_Kernel_BLOCK in "A34Pro_fptr_Event" of "A3400Pro_fptr_V0.9.3.lib"  with 0 
-;Locate: A34Pro_fptr_Evt_API_BLOCK in "A34Pro_fptr_Event" of "A3400Pro_fptr_V0.9.3.lib"  at 11C07 
+;Locate: A34Pro_fptr_Evt_API_BLOCK in "A34Pro_fptr_Event" of "A3400Pro_fptr_V0.9.3.lib"  at 11C39 
 ;Align: A34Pro_fptr_Evt_API_BLOCK in "A34Pro_fptr_Event" of "A3400Pro_fptr_V0.9.3.lib"  with 0 
-;Locate: A34Pro_fptr_Event_ISR_BLOCK in "A34Pro_fptr_Event" of "A3400Pro_fptr_V0.9.3.lib"  at 1198D 
+;Locate: A34Pro_fptr_Event_ISR_BLOCK in "A34Pro_fptr_Event" of "A3400Pro_fptr_V0.9.3.lib"  at 1198E 
 ;Align: A34Pro_fptr_Event_ISR_BLOCK in "A34Pro_fptr_Event" of "A3400Pro_fptr_V0.9.3.lib"  with 0 
 ;Locate: CODE in "GEO" of "GEO_V1.0.7.lib"  at E721 
 ;Align: CODE in "GEO" of "GEO_V1.0.7.lib"  with 0 
-;Locate: A1800_fptr_Evt_IM_BLOCK_2_1 in "A1800_fptr_Event " of "SACM_A1800_fptr_V0.9.2.lib"  at 11CA3 
+;Locate: A1800_fptr_Evt_IM_BLOCK_2_1 in "A1800_fptr_Event " of "SACM_A1800_fptr_V0.9.2.lib"  at 11CD5 
 ;Align: A1800_fptr_Evt_IM_BLOCK_2_1 in "A1800_fptr_Event " of "SACM_A1800_fptr_V0.9.2.lib"  with 0 
-;Locate: A1800_fptr_Evt_IM_BLOCK_1_1 in "A1800_fptr_Event " of "SACM_A1800_fptr_V0.9.2.lib"  at 11A5F 
+;Locate: A1800_fptr_Evt_IM_BLOCK_1_1 in "A1800_fptr_Event " of "SACM_A1800_fptr_V0.9.2.lib"  at 11A91 
 ;Align: A1800_fptr_Evt_IM_BLOCK_1_1 in "A1800_fptr_Event " of "SACM_A1800_fptr_V0.9.2.lib"  with 0 
 ;Locate: A1800_fptr_Evt_IM_BLOCK_2_2 in "A1800_fptr_Event " of "SACM_A1800_fptr_V0.9.2.lib"  at 10BA8 
 ;Align: A1800_fptr_Evt_IM_BLOCK_2_2 in "A1800_fptr_Event " of "SACM_A1800_fptr_V0.9.2.lib"  with 0 
-;Locate: A1800_fptr_Evt_IM_BLOCK_1_2 in "A1800_fptr_Event " of "SACM_A1800_fptr_V0.9.2.lib"  at 11C8C 
+;Locate: A1800_fptr_Evt_IM_BLOCK_1_2 in "A1800_fptr_Event " of "SACM_A1800_fptr_V0.9.2.lib"  at 11CBE 
 ;Align: A1800_fptr_Evt_IM_BLOCK_1_2 in "A1800_fptr_Event " of "SACM_A1800_fptr_V0.9.2.lib"  with 0 
-;Locate: A1800_fptr_Event_ISR_BLOCK in "A1800_fptr_Event " of "SACM_A1800_fptr_V0.9.2.lib"  at 119F9 
+;Locate: A1800_fptr_Event_ISR_BLOCK in "A1800_fptr_Event " of "SACM_A1800_fptr_V0.9.2.lib"  at 119FA 
 ;Align: A1800_fptr_Event_ISR_BLOCK in "A1800_fptr_Event " of "SACM_A1800_fptr_V0.9.2.lib"  with 0 
-;Locate: A1800_fptr_Evt_IM_BLOCK_1_3 in "A1800_fptr_Event " of "SACM_A1800_fptr_V0.9.2.lib"  at 11AE6 
+;Locate: A1800_fptr_Evt_IM_BLOCK_1_3 in "A1800_fptr_Event " of "SACM_A1800_fptr_V0.9.2.lib"  at 11B18 
 ;Align: A1800_fptr_Evt_IM_BLOCK_1_3 in "A1800_fptr_Event " of "SACM_A1800_fptr_V0.9.2.lib"  with 0 
-;Locate: CODE in "muliu2" of "CMacro1232.lib"  at 11CE3 
+;Locate: CODE in "muliu2" of "CMacro1232.lib"  at 11D15 
 ;Align: CODE in "muliu2" of "CMacro1232.lib"  with 0 
 ;Locate: CODE in "divu2" of "CMacro1232.lib"  at 1116B 
 ;Align: CODE in "divu2" of "CMacro1232.lib"  with 0 
-;Locate: CODE in "string/memset" of "CLib1232.lib"  at 11BA6 
+;Locate: CODE in "string/memset" of "CLib1232.lib"  at 11BD8 
 ;Align: CODE in "string/memset" of "CLib1232.lib"  with 0 
-;Locate: CODE in "stdio/sprintf" of "CLib1232.lib"  at 11B84 
+;Locate: CODE in "stdio/sprintf" of "CLib1232.lib"  at 11BB6 
 ;Align: CODE in "stdio/sprintf" of "CLib1232.lib"  with 0 
-;Locate: CODE in "string/strlen" of "CLib1232.lib"  at 11C24 
+;Locate: CODE in "string/strlen" of "CLib1232.lib"  at 11C56 
 ;Align: CODE in "string/strlen" of "CLib1232.lib"  with 0 
 ;Locate: CODE in "string/strncmp" of "CLib1232.lib"  at 116EC 
 ;Align: CODE in "string/strncmp" of "CLib1232.lib"  with 0 
-;Locate: CODE in "string/strchr" of "CLib1232.lib"  at 11ABA 
+;Locate: CODE in "string/strchr" of "CLib1232.lib"  at 11AEC 
 ;Align: CODE in "string/strchr" of "CLib1232.lib"  with 0 
 ;Locate: CODE in "stdlib/strtof" of "CLib1232.lib"  at 118DA 
 ;Align: CODE in "stdlib/strtof" of "CLib1232.lib"  with 0 
 ;Locate: A34Pro_fptr_StepTable_BLOCK in "A34Pro_fptr_StepTable" of "A3400Pro_fptr_V0.9.3.lib"  at C136 
 ;Align: A34Pro_fptr_StepTable_BLOCK in "A34Pro_fptr_StepTable" of "A3400Pro_fptr_V0.9.3.lib"  with 0 
-;Locate: SACM_A1800_fptr_DECODE_BLOCK in "SACM_A1800_fptr_Decode" of "SACM_A1800_fptr_V0.9.2.lib"  at FBE0 
+;Locate: SACM_A1800_fptr_DECODE_BLOCK in "SACM_A1800_fptr_Decode" of "SACM_A1800_fptr_V0.9.2.lib"  at FC07 
 ;Align: SACM_A1800_fptr_DECODE_BLOCK in "SACM_A1800_fptr_Decode" of "SACM_A1800_fptr_V0.9.2.lib"  with 0 
-;Locate: CODE in "__clz32" of "CMacro1232.lib"  at 11CCF 
+;Locate: CODE in "__clz32" of "CMacro1232.lib"  at 11D01 
 ;Align: CODE in "__clz32" of "CMacro1232.lib"  with 0 
-;Locate: CODE in "__divi32_n" of "CMacro1232.lib"  at 11B10 
+;Locate: CODE in "__divi32_n" of "CMacro1232.lib"  at 11B42 
 ;Align: CODE in "__divi32_n" of "CMacro1232.lib"  with 0 
-;Locate: CODE in "lshiu2" of "CMacro1232.lib"  at 11D5C 
+;Locate: CODE in "lshiu2" of "CMacro1232.lib"  at 11D83 
 ;Align: CODE in "lshiu2" of "CMacro1232.lib"  with 0 
-;Locate: CODE in "stdio/vsprintf" of "CLib1232.lib"  at 11BE8 
+;Locate: CODE in "stdio/vsprintf" of "CLib1232.lib"  at 11C1A 
 ;Align: CODE in "stdio/vsprintf" of "CLib1232.lib"  with 0 
 ;Locate: CODE in "stdlib/strtod" of "CLib1232.lib"  at D6BC 
 ;Align: CODE in "stdlib/strtod" of "CLib1232.lib"  with 0 
-;Locate: NB_DATA in "stdlib/strtod" of "CLib1232.lib"  at 11DC4 
+;Locate: NB_DATA in "stdlib/strtod" of "CLib1232.lib"  at 11DEB 
 ;Align: NB_DATA in "stdlib/strtod" of "CLib1232.lib"  with 0 
-;Locate: CODE in "libm/s_isnan" of "CLib1232.lib"  at 11B5E 
+;Locate: CODE in "libm/s_isnan" of "CLib1232.lib"  at 11B90 
 ;Align: CODE in "libm/s_isnan" of "CLib1232.lib"  with 0 
-;Locate: CODE in "libm/sf_nan" of "CLib1232.lib"  at 11D06 
+;Locate: CODE in "libm/sf_nan" of "CLib1232.lib"  at 11D38 
 ;Align: CODE in "libm/sf_nan" of "CLib1232.lib"  with 0 
 ;Locate: CODE in "cvd4f2" of "CMacro1232.lib"  at 10FDD 
 ;Align: CODE in "cvd4f2" of "CMacro1232.lib"  with 0 
@@ -281,33 +281,33 @@ Locate: IRam_Bank0 after __sn_init_table linkat #RAM
 ;Align: A1800_PM_OUT_BLOCK in "A1800_Codec" of "SACM_A1800_fptr_V0.9.2.lib"  with 0 
 ;Locate: CODE in "stdio/vsnprintf" of "CLib1232.lib"  at 10371 
 ;Align: CODE in "stdio/vsnprintf" of "CLib1232.lib"  with 0 
-;Locate: CODE in "ctype/isspace" of "CLib1232.lib"  at 11C5A 
+;Locate: CODE in "ctype/isspace" of "CLib1232.lib"  at 11C8C 
 ;Align: CODE in "ctype/isspace" of "CLib1232.lib"  with 0 
 ;Locate: CODE in "string/strcasecmp" of "CLib1232.lib"  at 1165A 
 ;Align: CODE in "string/strcasecmp" of "CLib1232.lib"  with 0 
-;Locate: CODE in "cvi1d4" of "CMacro1232.lib"  at FFCE 
+;Locate: CODE in "cvi1d4" of "CMacro1232.lib"  at 11A60 
 ;Align: CODE in "cvi1d4" of "CMacro1232.lib"  with 0 
-;Locate: CODE in "muld4" of "CMacro1232.lib"  at F766 
+;Locate: CODE in "muld4" of "CMacro1232.lib"  at F78D 
 ;Align: CODE in "muld4" of "CMacro1232.lib"  with 0 
-;Locate: CODE in "addsubd4" of "CMacro1232.lib"  at EB78 
+;Locate: CODE in "addsubd4" of "CMacro1232.lib"  at ED9A 
 ;Align: CODE in "addsubd4" of "CMacro1232.lib"  with 0 
 ;Locate: CODE in "__rshu4_r" of "CMacro1232.lib"  at 116A3 
 ;Align: CODE in "__rshu4_r" of "CMacro1232.lib"  with 0 
 ;Locate: CODE in "stdio/__v_printf" of "CLib1232.lib"  at B45C 
 ;Align: CODE in "stdio/__v_printf" of "CLib1232.lib"  with 0 
-;Locate: NB_DATA in "stdio/__v_printf" of "CLib1232.lib"  at 11F03 
+;Locate: NB_DATA in "stdio/__v_printf" of "CLib1232.lib"  at 11F2A 
 ;Align: NB_DATA in "stdio/__v_printf" of "CLib1232.lib"  with 0 
-;Locate: CODE in "string/memcpy" of "CLib1232.lib"  at 11A2C 
+;Locate: CODE in "string/memcpy" of "CLib1232.lib"  at 11A2D 
 ;Align: CODE in "string/memcpy" of "CLib1232.lib"  with 0 
-;Locate: CODE in "ctype/tolower" of "CLib1232.lib"  at 11CF5 
+;Locate: CODE in "ctype/tolower" of "CLib1232.lib"  at 11D27 
 ;Align: CODE in "ctype/tolower" of "CLib1232.lib"  with 0 
 ;Locate: CODE in "lshiu4" of "CMacro1232.lib"  at 11868 
 ;Align: CODE in "lshiu4" of "CMacro1232.lib"  with 0 
 ;Locate: CODE in "__mul_u32_u128" of "CMacro1232.lib"  at 10EB8 
 ;Align: CODE in "__mul_u32_u128" of "CMacro1232.lib"  with 0 
-;Locate: CODE in "stdlib/strtoul" of "CLib1232.lib"  at FD3F 
+;Locate: CODE in "stdlib/strtoul" of "CLib1232.lib"  at FD66 
 ;Align: CODE in "stdlib/strtoul" of "CLib1232.lib"  with 0 
-;Locate: CODE in "stdlib/strtol" of "CLib1232.lib"  at FA7D 
+;Locate: CODE in "stdlib/strtol" of "CLib1232.lib"  at FAA4 
 ;Align: CODE in "stdlib/strtol" of "CLib1232.lib"  with 0 
 ;Locate: CODE in "stdlib/__lltostr" of "CLib1232.lib"  at 107FB 
 ;Align: CODE in "stdlib/__lltostr" of "CLib1232.lib"  with 0 
@@ -315,19 +315,19 @@ Locate: IRam_Bank0 after __sn_init_table linkat #RAM
 ;Align: CODE in "stdlib/__ltostr" of "CLib1232.lib"  with 0 
 ;Locate: CODE in "stdio/__dtostrex" of "CLib1232.lib"  at DFAB 
 ;Align: CODE in "stdio/__dtostrex" of "CLib1232.lib"  with 0 
-;Locate: CODE in "subiu4" of "CMacro1232.lib"  at 11D44 
+;Locate: CODE in "subiu4" of "CMacro1232.lib"  at 11D76 
 ;Align: CODE in "subiu4" of "CMacro1232.lib"  with 0 
 ;Locate: CODE in "ltsf2" of "CMacro1232.lib"  at 11069 
 ;Align: CODE in "ltsf2" of "CMacro1232.lib"  with 0 
 ;Locate: CODE in "gtsf2" of "CMacro1232.lib"  at 110EA 
 ;Align: CODE in "gtsf2" of "CMacro1232.lib"  with 0 
-;Locate: CODE in "ctype/isdigit" of "CLib1232.lib"  at 11D36 
+;Locate: CODE in "ctype/isdigit" of "CLib1232.lib"  at 11D68 
 ;Align: CODE in "ctype/isdigit" of "CLib1232.lib"  with 0 
-;Locate: CODE in "ctype/isalpha" of "CLib1232.lib"  at 11C74 
+;Locate: CODE in "ctype/isalpha" of "CLib1232.lib"  at 11CA6 
 ;Align: CODE in "ctype/isalpha" of "CLib1232.lib"  with 0 
-;Locate: CODE in "ctype/isupper" of "CLib1232.lib"  at 11D26 
+;Locate: CODE in "ctype/isupper" of "CLib1232.lib"  at 11D58 
 ;Align: CODE in "ctype/isupper" of "CLib1232.lib"  with 0 
-;Locate: NB_DATA in "reent/impure" of "CLib1232.lib"  at 12078 
+;Locate: NB_DATA in "reent/impure" of "CLib1232.lib"  at 120A0 
 ;Align: NB_DATA in "reent/impure" of "CLib1232.lib"  with 0 
 ;Locate: CODE in "modu2" of "CMacro1232.lib"  at 111E2 
 ;Align: CODE in "modu2" of "CMacro1232.lib"  with 0 
@@ -339,21 +339,21 @@ Locate: IRam_Bank0 after __sn_init_table linkat #RAM
 ;Align: CODE in "divu4" of "CMacro1232.lib"  with 0 
 ;Locate: CODE in "stdlib/cvt" of "CLib1232.lib"  at BC26 
 ;Align: CODE in "stdlib/cvt" of "CLib1232.lib"  with 0 
-;Locate: NB_DATA in "stdlib/cvt" of "CLib1232.lib"  at 12019 
+;Locate: NB_DATA in "stdlib/cvt" of "CLib1232.lib"  at 12040 
 ;Align: NB_DATA in "stdlib/cvt" of "CLib1232.lib"  with 0 
 ;Locate: CODE in "libm/s_isinf" of "CLib1232.lib"  at 11912 
 ;Align: CODE in "libm/s_isinf" of "CLib1232.lib"  with 0 
 ;Locate: CODE in "memory/free" of "Libmem1232.lib"  at 11342 
 ;Align: CODE in "memory/free" of "Libmem1232.lib"  with 0 
-;Locate: CODE in "string/strcpy" of "CLib1232.lib"  at 11C3F 
+;Locate: CODE in "string/strcpy" of "CLib1232.lib"  at 11C71 
 ;Align: CODE in "string/strcpy" of "CLib1232.lib"  with 0 
 ;Locate: CODE in "modi1" of "CMacro1232.lib"  at 11258 
 ;Align: CODE in "modi1" of "CMacro1232.lib"  with 0 
 ;Locate: CODE in "divi1" of "CMacro1232.lib"  at 113B3 
 ;Align: CODE in "divi1" of "CMacro1232.lib"  with 0 
-;Locate: CODE in "__modi32_n" of "CMacro1232.lib"  at 11A8E 
+;Locate: CODE in "__modi32_n" of "CMacro1232.lib"  at 11AC0 
 ;Align: CODE in "__modi32_n" of "CMacro1232.lib"  with 0 
-;Locate: CODE in "__clz64" of "CMacro1232.lib"  at 11B38 
+;Locate: CODE in "__clz64" of "CMacro1232.lib"  at 11B6A 
 ;Align: CODE in "__clz64" of "CMacro1232.lib"  with 0 
 ;Locate: CODE in "__modi64_n" of "CMacro1232.lib"  at 1148F 
 ;Align: CODE in "__modi64_n" of "CMacro1232.lib"  with 0 
@@ -367,29 +367,29 @@ Locate: IRam_Bank0 after __sn_init_table linkat #RAM
 ;Align: CODE in "eqsf2" of "CMacro1232.lib"  with 0 
 ;Locate: CODE in "cvd4i1" of "CMacro1232.lib"  at 117B6 
 ;Align: CODE in "cvd4i1" of "CMacro1232.lib"  with 0 
-;Locate: CODE in "__clz16" of "CMacro1232.lib"  at 11D51 
+;Locate: CODE in "__clz16" of "CMacro1232.lib"  at FFF5 
 ;Align: CODE in "__clz16" of "CMacro1232.lib"  with 0 
-;Locate: CODE in "__divi16_n" of "CMacro1232.lib"  at 11D66 
+;Locate: CODE in "__divi16_n" of "CMacro1232.lib"  at 11D8D 
 ;Align: CODE in "__divi16_n" of "CMacro1232.lib"  with 0 
-;Locate: CODE in "lshiu1" of "CMacro1232.lib"  at 11D93 
+;Locate: CODE in "lshiu1" of "CMacro1232.lib"  at 11DBA 
 ;Align: CODE in "lshiu1" of "CMacro1232.lib"  with 0 
-;Locate: CODE in "rshu1" of "CMacro1232.lib"  at 11D9B 
+;Locate: CODE in "rshu1" of "CMacro1232.lib"  at 11DC2 
 ;Align: CODE in "rshu1" of "CMacro1232.lib"  with 0 
-;Locate: CODE in "rshu2" of "CMacro1232.lib"  at 11D70 
+;Locate: CODE in "rshu2" of "CMacro1232.lib"  at 11D97 
 ;Align: CODE in "rshu2" of "CMacro1232.lib"  with 0 
-;Locate: CODE in "rshu4" of "CMacro1232.lib"  at 119C3 
+;Locate: CODE in "rshu4" of "CMacro1232.lib"  at 119C4 
 ;Align: CODE in "rshu4" of "CMacro1232.lib"  with 0 
-;Locate: CODE in "memory/init_heap" of "Libmem1232.lib"  at 11BC7 
+;Locate: CODE in "memory/init_heap" of "Libmem1232.lib"  at 11BF9 
 ;Align: CODE in "memory/init_heap" of "Libmem1232.lib"  with 0 
-;Locate: CODE in "__u2fd1bit" of "CMacro1232.lib"  at 11CB9 
+;Locate: CODE in "__u2fd1bit" of "CMacro1232.lib"  at 11CEB 
 ;Align: CODE in "__u2fd1bit" of "CMacro1232.lib"  with 0 
-;Locate: CODE in "memory/ram_info" of "Libmem1232.lib"  at 11DC2 
+;Locate: CODE in "memory/ram_info" of "Libmem1232.lib"  at 11DE9 
 ;Align: CODE in "memory/ram_info" of "Libmem1232.lib"  with 0 
-;Locate: CODE in "_GPTag" of "CMacro1232.lib"  at 11DA3 
+;Locate: CODE in "_GPTag" of "CMacro1232.lib"  at 11DCA 
 ;Align: CODE in "_GPTag" of "CMacro1232.lib"  with 0 
-;Locate: CODE in "stdlib/_GPTag" of "CLib1232.lib"  at 11DAB 
+;Locate: CODE in "stdlib/_GPTag" of "CLib1232.lib"  at 11DD2 
 ;Align: CODE in "stdlib/_GPTag" of "CLib1232.lib"  with 0 
-;Locate: CODE in "memory/_GPTag" of "Libmem1232.lib"  at 11DB3 
+;Locate: CODE in "memory/_GPTag" of "Libmem1232.lib"  at 11DDA 
 ;Align: CODE in "memory/_GPTag" of "Libmem1232.lib"  with 0 
 ;Locate: _CODE_SPI_SEC in "SPI_Flash.obj" at 9800 
 ;Align: _CODE_SPI_SEC in "SPI_Flash.obj" with 0 

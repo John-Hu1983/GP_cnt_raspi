@@ -34,7 +34,7 @@ const u16 terminal_len = sizeof(terminal) / sizeof(terminal[0]);
 void init_shell_equipment(void)
 {
   memset((void *)&cmd, 0, sizeof(cmd));
-  init_uart_equipment(Baud_115200);
+  init_uart_equipment(Baud_460800);
 }
 
 /*
